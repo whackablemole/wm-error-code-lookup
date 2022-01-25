@@ -50,9 +50,9 @@ const SearchResult = ({ errorCode }) => {
 				<Result>
 				<Heading>TRANS-500197-3</Heading>
 				<Description>Fault with the range 2/range 4 solenoid valve</Description>
-				<LinkContainer>
+				{/* <LinkContainer>
 					<P><Link target="_blank" href="http://ldgs-agcommc-we-dev.azurewebsites.net/concept/D016794/VKKMX999EKB123456/8S/8S.225%20Dyna7%20(Q1E)/2019-15-12/MF%208S.225%20Dyna%207/486239">More...</Link></P>
-				</LinkContainer>
+				</LinkContainer> */}
 			</Result>
 			) }
 		</Wrapper>

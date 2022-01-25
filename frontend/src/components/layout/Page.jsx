@@ -20,7 +20,7 @@ const Logo = styled.img`
 const Page = ({ children }) => {
 	return ( 
 		<Wrapper>
-			{/* <Logo src={'images/logo.svg'} /> */}
+			<Logo src={'images/logo.svg'} />
 			{children}
 		</Wrapper>
 	 );

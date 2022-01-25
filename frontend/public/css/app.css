@@ -4,6 +4,11 @@
 }
 
 @font-face {
+	font-family: 'PublicSans-Medium';
+	src: url('/fonts/PublicSans-Medium.ttf') format('truetype');
+}
+
+@font-face {
 	font-family: 'PublicSans-SemiBold';
 	src: url('/fonts/PublicSans-SemiBold.ttf') format('truetype');
 }

@@ -1,11 +1,16 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import SearchBox from './SearchBox';
+import SearchResult from './SearchResult';
 
-const Wrapper = styled.div`
+const CentredContainer = css`
 	width: 775px;
 	margin-right: auto;
 	margin-left: auto;
+`;
+
+const Wrapper = styled.div`
+	${CentredContainer}
 `;
 
 const H1 = styled.h1`
@@ -20,12 +25,26 @@ const Subtitle = styled.div`
 	color: #ccc;
 `;
 
+const ResultsContainer = styled.div`
+	${CentredContainer}
+`;
+
 const Search = () => {
+
+	const [errorCode, setErrorCode] = React.useState("");
+
+	const doSearch = (term) => {
+		setErrorCode(term);
+	}
+
 	return ( 
 		<Wrapper>
 			<H1>Search</H1>
 			<Subtitle>Enter a Diagnostic Trouble Code (DTC) to continue...</Subtitle>
-			<SearchBox />
+			<SearchBox doSearch={doSearch} />
+			<ResultsContainer>
+				<SearchResult errorCode={errorCode} />
+			</ResultsContainer>
 		</Wrapper>
 	 );
 }

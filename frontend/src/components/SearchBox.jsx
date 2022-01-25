@@ -9,9 +9,9 @@ const Input = styled.input`
 	width: 100%;
 	height: 100px;
 	background-color: white;
-	filter: drop-shadow(22px 22px 37px rgba(0, 0, 0, 0.45));
+	box-shadow: ${({ theme }) => theme.shadows.searchElements};
 	margin-top: 30px;
-	border-radius: 15px;
+	border-radius: ${({ theme }) => theme.radii.xl};
 	font-family: ${({ theme }) => theme.fonts.bold};
 	font-size: 48px;
 	color: #484848;
@@ -25,11 +25,11 @@ const Icon = styled.img`
 	right: 28px;
 `;
 
-const SearchBox = () => {
+const SearchBox = ({ doSearch }) => {
 	return ( 
 		<>
 			<Wrapper>
-				<Input />
+				<Input onChange={e => doSearch(e.target.value)}/>
 				<Icon src={'images/icons/icon-search.svg'} />
 			</Wrapper>
 		</>

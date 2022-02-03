@@ -46,10 +46,10 @@ const SearchResult = ({ errorCode }) => {
 
 	return ( 
 		<Wrapper>
-			{ errorCode.toLowerCase() === "trans-500197-3" && (
+			{ errorCode.toLowerCase() === "p0020" && (
 				<Result>
-				<Heading>TRANS-500197-3</Heading>
-				<Description>Fault with the range 2/range 4 solenoid valve</Description>
+				<Heading>P0020</Heading>
+				<Description>Intake Camshaft Position Actuator Circuit/Open (Bank 2)</Description>
 				{/* <LinkContainer>
 					<P><Link target="_blank" href="http://ldgs-agcommc-we-dev.azurewebsites.net/concept/D016794/VKKMX999EKB123456/8S/8S.225%20Dyna7%20(Q1E)/2019-15-12/MF%208S.225%20Dyna%207/486239">More...</Link></P>
 				</LinkContainer> */}

@@ -22,7 +22,7 @@ const H1 = styled.h1`
 const Subtitle = styled.div`
 	font-size: 18px;
 	font-family: ${({ theme }) => theme.fonts.semibold};
-	color: #ccc;
+	color: #000;
 `;
 
 const ResultsContainer = styled.div`

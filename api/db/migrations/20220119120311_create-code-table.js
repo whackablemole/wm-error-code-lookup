@@ -6,7 +6,7 @@ exports.up = function(knex) {
   return knex.schema.createTable('codes', (table) => {
 	table.increments(); // Creates id column
 	table.string('code').notNullable().index().unique().primary();
-	table.text('description').notNullable();
+	table.integer('severityId').notNullable();
 	table.timestamps(true, true);
   })
 };
